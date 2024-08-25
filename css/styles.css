@@ -65,6 +65,10 @@ li,p{
   color: #000000;
 }
 
+.p_tb{
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
 
 h1,
 h2,
@@ -85,12 +89,37 @@ h5 {
   margin-bottom: 0;
 }
 
-
 .section_title h3{
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   font-weight: 600;
 }
 
+.section_title h6{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666363;
+  margin-bottom: 8px;
+}
+
+.section_title h6::before{
+  display: inline-block;
+  content:"";
+  height: 1px;
+  width: 100px;
+  background-color: #b29600;
+  margin-right: 6px;
+  margin-bottom:4px;  
+}
+
+.section_title h6::after{
+  display: inline-block;
+  content:"";
+  height: 1px;
+  width: 100px;
+  background-color: #b29600;
+  margin-left: 6px;
+  margin-bottom:4px;
+}
 
 
 .navbar{
@@ -98,6 +127,7 @@ h5 {
     height: 80px;
     margin: 0px;
     padding: 0.5rem;
+    z-index: 99;
 }
 
 .navbar.sticky {
@@ -113,8 +143,7 @@ h5 {
 
 .nav-item.dropdown:hover .dropdown-menu {
     display: inline-block;
-    margin-top: 0; /
-    
+    margin-top: 0;   
   }
 
 .nav-item .dropdown-menu{
@@ -125,7 +154,7 @@ h5 {
     background-color: white;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
-    
+    font-weight: 600;
   }
 
   .nav-item .dropdown-menu .dropdown-item:hover{
@@ -223,4 +252,8 @@ h5 {
 .slide_btn:hover{
   color: white;
   background-color: #0084C9;
+}
+
+.service_home_card{
+  
 }
