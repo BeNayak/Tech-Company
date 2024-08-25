@@ -62,7 +62,7 @@ button {
 
 li,p{
   font-size: clamp(1rem, 2vw, 1.125rem);
-  color: #000000;
+  color: #3f444b;
 }
 
 .p_tb{
@@ -130,6 +130,13 @@ h5 {
     z-index: 99;
 }
 
+.navbar-brand img{
+  text-align: center;
+  height: 80px;
+}
+
+
+
 .navbar.sticky {
   position: fixed;
   top: 0;
@@ -162,7 +169,7 @@ h5 {
   }
   
 .hire-btn{
-    background-color: #4CAF50;
+    background-color: #005BAB;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -173,7 +180,7 @@ h5 {
 
 .hire-btn:hover{
     color:antiquewhite;
-    background-color: #3e8e41;
+    background-color: #005BAB;
 }
 
 .navbar-toggler{
@@ -194,7 +201,7 @@ h5 {
  }
 
  .nav-link:hover, .nav-item .nav-link.active{
-    color: #3e8e41;
+    color: #005BAB;
  }
 
  .nav-item .nav-link::before{
@@ -202,7 +209,7 @@ h5 {
     position: absolute;
     height: 2px;
     width: 0;
-    background-color: #3e8e41;
+    background-color: #005BAB;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -215,11 +222,27 @@ h5 {
     width: 100%;
  }
 
+
+
 .hero-section{
     background-color: #DAF5FF ;
     width: 100%;
     
     padding: 3.125rem 0;
+}
+
+.hero-section .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .slide_btn{
@@ -238,11 +261,12 @@ h5 {
 
 .slide_btn.active{
   color:white;
-  background-color: #0084C9;
+  background-color: #005BAB;
+  border-color: #005BAB;
 }
 .slide_btn.active:hover{
-  background-color: #016194;
-  border-color: #016194;
+  background-color: #0084C9;
+  border-color: #0084C9;
 }
 
 .slider_left .section_title{
@@ -251,9 +275,25 @@ h5 {
 
 .slide_btn:hover{
   color: white;
-  background-color: #0084C9;
+  background-color: #005BAB;
+}
+
+.service_home_card .section_title h3{
+
+  color: #005BAB;
 }
 
 .service_home_card{
-  
+  height: 100%;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+.service_home_card:hover {
+  background-color: #daf5ff;
+}
+
+.service .service_home_card .service_home_card-icon img{
+  height: 6.125rem;
+  width: 6.125rem;
+  object-fit: contain;
 }
