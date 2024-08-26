@@ -1,0 +1,5 @@
+@media (max-width:768px){
+    .about-section .about_number .row-number:nth-child(even) .number-card{
+        margin-top: 0px;
+      }
+}

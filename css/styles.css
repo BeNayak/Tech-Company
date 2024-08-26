@@ -60,6 +60,10 @@ button {
   cursor: pointer;
 }
 
+.bg_pale_blue{
+  background-color: #f4f5fe;
+}
+
 li,p{
   font-size: clamp(1rem, 2vw, 1.125rem);
   color: #3f444b;
@@ -80,7 +84,7 @@ h5 {
   line-height: 1.4;
 }
 
-.section_title h1{
+.section_title h1, .section_title h2{
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700;
   text-transform: capitalize;
@@ -106,7 +110,7 @@ h5 {
   content:"";
   height: 1px;
   width: 100px;
-  background-color: #b29600;
+  background-color: #005BAB;
   margin-right: 6px;
   margin-bottom:4px;  
 }
@@ -116,7 +120,7 @@ h5 {
   content:"";
   height: 1px;
   width: 100px;
-  background-color: #b29600;
+  background-color: #005BAB;
   margin-left: 6px;
   margin-bottom:4px;
 }
@@ -223,11 +227,9 @@ h5 {
  }
 
 
-
 .hero-section{
     background-color: #DAF5FF ;
     width: 100%;
-    
     padding: 3.125rem 0;
 }
 
@@ -278,6 +280,54 @@ h5 {
   background-color: #005BAB;
 }
 
+.about-section .content{
+  padding: 40px;
+}
+
+.about-section .content .btn-read-more {
+  color: white;
+  background: #005BAB;
+  line-height: 0;
+  padding: 20px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .content .btn-read-more span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.about-section .about_number .number-card{
+  background-color: white;
+   padding: 50px 40px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100%;
+  transition: all 0.3s ease-out 0s;
+  text-align: center;
+}
+
+.about-section .about_number .row-number:nth-child(even) .number-card{
+  margin-top: -40px;
+}
+
+.about-section .about_number .number-card h2.counter{
+  color:#005BAB;
+  position: relative;
+  display: inline-block;
+}
+
+.about-section .about_number .number-card h2.counter::after{
+  content: "+";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .service_home_card .section_title h3{
 
   color: #005BAB;
@@ -287,6 +337,7 @@ h5 {
   height: 100%;
   border-radius: 6px;
   padding: 0.75rem;
+  transition: 0.4s ease-in-out;
 }
 .service_home_card:hover {
   background-color: #daf5ff;
@@ -297,3 +348,4 @@ h5 {
   width: 6.125rem;
   object-fit: contain;
 }
+
