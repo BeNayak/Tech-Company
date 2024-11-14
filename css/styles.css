@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -82,6 +84,16 @@ h5 {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb {
+  background: #005BAB;
 }
 
 .section_title h1, .section_title h2{
@@ -169,7 +181,7 @@ h5 {
   }
 
   .nav-item .dropdown-menu .dropdown-item:hover{
-    color:#3e8e41
+    color:#005BAB
   }
   
 .hire-btn{
@@ -228,7 +240,7 @@ h5 {
 
 
 .hero-section{
-    background-color: #DAF5FF ;
+    background-color: #AFC6E6;
     width: 100%;
     padding: 3.125rem 0;
 }
@@ -280,8 +292,19 @@ h5 {
   background-color: #005BAB;
 }
 
+.client-section{
+  background-color: transparent;
+  background-image: linear-gradient(180deg,#AFC6E6 0%,   #f4f5fe  100%);
+}
+
+.about-section{
+  background-color: transparent;
+  background-image: linear-gradient(180deg,#AFC6E6 0%,   #f4f5fe  100%);
+}
+
 .about-section .content{
   padding: 40px;
+  
 }
 
 .about-section .content .btn-read-more {
@@ -333,6 +356,42 @@ h5 {
   color: #005BAB;
 }
 
+ .more {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+  padding-left: 5.2rem;
+  margin-left: 0.625rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ .more:hover{
+  color: #0084C9;
+}
+
+ .more::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #005BAB;
+  height: 1px;
+  width: 66px;
+  left: 0;
+  top: 50%; 
+}
+
+ .more::after{
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  color: #005BAB;
+  left: 4rem;
+  top: 4%;
+}
+
 .service_home_card{
   height: 100%;
   border-radius: 6px;
@@ -340,7 +399,7 @@ h5 {
   transition: 0.4s ease-in-out;
 }
 .service_home_card:hover {
-  background-color: #daf5ff;
+  background-color: #dbecfb;
 }
 
 .service .service_home_card .service_home_card-icon img{
@@ -349,6 +408,91 @@ h5 {
   object-fit: contain;
 }
 
+.testimonial-cards-slider .testimonial-card .card-wrap{
+  margin: 20px 12px;
+  padding: 2px 18px 20px 18px;
+  background-color: rgb(236, 241, 246);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  border-radius: 5px;
+}
+
+.testimonial-slider .testimonial-item img, .testimonial-cards-slider .testimonial-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.testimonial-item .testi_text, .testimonial-card .testi_text {
+  font-size: clamp(18px,3vw, 22px);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.style_star li span {
+  color:#FFD43B;
+}
+
+.testimonial-item .guest-info, .testimonial-card .guest-info{
+  padding-top: 12px;
+}
+
+.call-to-action {
+  padding: 120px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+.call-to-action img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3 {
+  /* color: var(--default-color); */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.call-to-action p {
+  color: #696969;
+  font-size: 18px;
+}
+
+.call-to-action .cta-btn {
+  font-family:"Poppins", sans-serif ;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #0084C9;
+  color: white;
+  background-color: #0084C9;
+}
+
+.call-to-action .cta-btn:hover {
+  background: white;
+  border: 2px solid #0084C9;
+  color: #0084C9;
+}
 
 .footer {
   color: black;
@@ -440,4 +584,52 @@ h5 {
 .footer .copyright p {
   color: black;
   margin-bottom: 0;
+}
+
+.clients{
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.client-section .client-group .clients .client-card{
+  height: 90px;
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #0084C9;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.client-section .client-group .clients .client-card img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.blogs{
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #f4f5fe 0%, #AFC6E6 100%);
+}
+
+.blogs .blog-card{
+  border: 1px solid #0084C9;
+  border-radius: 6px;
+}
+
+.blogs .blog-card .blog-thumb{
+  height: 320px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .blog-card .blog-thumb img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.blogs .blog-card:hover .blog-thumb img{
+  transform: scale(1.04, 1.04);
 }

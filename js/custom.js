@@ -57,3 +57,39 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+$('.testimonial-cards-slider').slick({
+    infinite:true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows:false,
+    responsive: [
+       
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+    ]
+});
+
+$('.client-group').slick({
+    infinite:true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows:false
+});
